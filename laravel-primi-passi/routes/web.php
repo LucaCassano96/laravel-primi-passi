@@ -18,14 +18,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = [
-        "title" => "Hello World",
-        "name" => "Luca Cassano"
-    ];
-
-    return view('Homepage', $data );
+        $title = "Hello World";
+        $name = "Luca Cassano";
+    
+    return view('Homepage', compact("title", "name") );
 });
 
 Route::get('/contacts', function () {
-    return "<a href='#'>contact me</a>";
+    return view('Contacts');
 });

@@ -9,6 +9,13 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+        <nav>
+
+            <a href="http://127.0.0.1:8000/contacts">Contacts</a>
+            <a href="http://127.0.0.1:8000">Home</a>
+
+        </nav>
+
         <h1>{{$title}} from {{ $name }}!</h1>
 
 
